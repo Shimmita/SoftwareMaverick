@@ -1,0 +1,16 @@
+.modal-contents {
+  position: absolute;
+}
+
+.heading-modal {
+  font-size: large;
+}
+
+.list-item-modal {
+  padding: 1rem;
+  box-shadow: 0 0 1.5px;
+}
+
+.list-item-modal:hover {
+  cursor: pointer;
+}

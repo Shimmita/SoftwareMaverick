@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container-title-name {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.title-name {
+  border-radius: 0.5rem;
+  padding: .5rem;
+  margin-top: 3rem;
+  font-size: 14px;
+  text-decoration: none;
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  color: white;
+}
+
+.title-name:hover {
+  cursor: pointer;
+  transform: translateY(-10%);
+}
+
+.container-list-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1 1 200px;
+  margin-left: 1rem;
+}
+
+.nav-list-head {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2px;
+  margin-right: 2.1rem;
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  margin-bottom: 2rem;
+}
+
+.nav-list-head:hover {
+  cursor: pointer;
+  transform: translate(-3%);
+
+  .link-tag-react {
+    background-color: transparent;
+  }
+}
+
+.link-tag-react {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.link-tag-react:active {
+  color: red;
+}
+
+/* mobile view Css */
+.container-mobile {
+  padding: 0.7rem;
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.mobile-contents {
+  margin-bottom: 1rem;
+  box-shadow: 0 0 2px;
+  border-radius: 1rem;
+  height: 110px;
+  padding: 1rem;
+}
+
+/* tablet view css */
+
+.container-tablet {
+  display: flex;
+  padding: 0.5rem;
+}
+
+.sidebar-container-tablet {
+  flex: 0 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+}
+
+.sidebar-item-tablet {
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 1.5px;
+}
+
+.sidebar-item-tablet:hover {
+  cursor: pointer;
+  transform: translate(5%);
+  box-shadow: 0 0 0;
+}
+
+.container-tablet-content {
+  flex: 1 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0.5rem;
+  gap: 10px;
+  overflow-y: scroll;
+  height: 500px;
+}
+
+.tablet-contents {
+  border-radius: 0.5px;
+  box-shadow: 0 0 1.5px;
+  height: 150px;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+/* laptop desktop and televison designs */
+.container-laptop {
+  display: flex;
+  padding: 0.5rem;
+  padding-bottom: 4.3rem;
+}
+
+.sidebar-container-laptop {
+  flex: 0 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0.3rem;
+}
+
+.sidebar-item-laptop {
+  padding: 1.8rem;
+  text-align: center;
+  box-shadow: 0 0 1.5px;
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+  border-radius: 1rem;
+
+  /* background: linear-gradient(to bottom, #5D26C1, #A17DFC); */
+
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  color: white;
+
+  /* background: linear-gradient(90deg, #FDBB2D 0%, #3A1C71 100%);
+  color: white; */
+  /* 
+  background: linear-gradient(to bottom, #5a3f37, #2c7744);
+  color: white; */
+}
+
+.sidebar-item-laptop:hover {
+  cursor: pointer;
+  transform: translate(-2%);
+  box-shadow: 0 0 3px;
+}
+
+/* hiding the scroll views */
+.parent-laptop-contents{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.container-laptop-content {
+  flex: 1 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0.5rem;
+  gap: 20px;
+  overflow-y: scroll;
+  height: 500px;
+
+
+  /* conforming to the parent so as to hide the scroll bars */
+  width: 100%;
+  padding-right: 17px;
+  box-sizing: content-box;
+
+}
+
+
+.laptop-contents {
+  box-shadow: 0 0 1.5px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  height: 180px;
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  color: white;
+
+}
+
+.laptop-contents:hover {
+  scale: 1.02;
+}
+
+/* .main-parent-div{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+} */
+
+.parent-div-laptop {
+  background: url("../../logo/bg_a.jpg") fixed no-repeat center;
+  height: 100%;
+  width: 100%;
+
+}
+
+/* other responsive  design attributes focr different screen sizes */
+/* smartphones */
+@media screen and (max-width: 600px) {
+  .container-list-head {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .nav-list-head {
+    margin-right: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .title-name {
+    scale: 1.15;
+  }
+}
